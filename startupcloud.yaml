@@ -1,0 +1,10 @@
+#!/bin/bash
+#cloud-config
+users:
+  - name: yc-user
+    ssh-authorized-keys: AAAAB3NzaC1yc2EAAAADAQABAAABgQDDuJEvFKIxz4Sc7Bj2rPBt1QB6chbolKpOCJPtuo5xaanJRhFNK77lF/Hvir1hIcMfT+ZKxO99tAmSzyM1QS9Q6KevG5MdlC9JlETLh1sftpP8NOS3ij03O6fjgyp9ivLmk/gME5TyhM+nhld/nomp4JmeBY0T9DHTA28ojOZSj71JExcCKzRMgrAJvbfiw1e235P0Lsd0I+L6NhhheM1jbCCZzFHNt4b0g0u8OnuOd6TfmTORyn6p6BKxYik3A19ogiD4pX02grtCa1ujJywOESbYDuNl2XmwcBm7dtI9MLaskpAoanPFPrD5CU/XsE3le+/WJe7j0+wRTQp1x/l2uZR6FXFL/nr8FB63dUlJvBSvcoE1NJuDiPfwH1wS8RpBA1PUjujmCjYf74mY+4B43aKrFJsyosju1DHq8rZzdPEGzMEWJ39oRcG8fZF9TxW0gngM7O0JBIeJsHeeOoA6pP/UBoBuWE7gvpG7SPpsMPDM5scVARzBRLBjKPfBYUc= yc-user
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+runcmd:
+ - curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/install_ruby.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/install_mongodb.sh | bash && curl https://raw.githubusercontent.com/Otus-DevOps-2020-11/asobakin_infra/cloud-testapp/deploy.sh | bash
