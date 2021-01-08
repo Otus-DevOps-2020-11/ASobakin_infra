@@ -40,7 +40,7 @@ someinternalhost_IP = 10.130.0.29
 5.Для коннекта по VPN необходима установка iptables на ВМ YC.
 
 # Основные сервисы Yandex Cloud  (HW_6)
-testapp_IP = 178.154.226.125
+testapp_IP = 178.154.224.197
 testapp_port = 9292
 
 Задание со звездочкой:
