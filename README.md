@@ -37,8 +37,16 @@ someinternalhost_IP = 10.130.0.29
 
 4. Добавьте "Labels" cloud-bastion к вашему Pull Request
 
+
+5.Для коннекта по VPN необходима установка iptables на ВМ YC.
+
+# Основные сервисы Yandex Cloud  (HW_6)
+testapp_IP = 178.154.224.197
+testapp_port = 9292
+
+Задание со звездочкой:
+В команду созданий машины добавляется строчка `--metadata-from-file user-data=startupcloud.yaml`
+Сам файл startupcloud.yaml в корне репозитория
+
  
-
-
-
 
