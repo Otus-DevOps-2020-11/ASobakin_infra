@@ -58,9 +58,6 @@ testapp_port = 9292
 Описана инфраструктура при помощи terraform и провайдера yandex. Выложен файл terraform.tfvars.example
 
 # Основные компоненты terraform (HW_9)
-
-What was done:
-
 Созданны два шаблона виртуальной машины: app.json и db.json
 Созданные модули terraform: app and db
 Созданы разные окружения с использованием модулей: stage and prod.
